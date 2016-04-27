@@ -12,7 +12,15 @@
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/acciones.js"></script>
 <script src="phonegap.js" type="text/javascript"></script>
- <script>
+ 
+</head>
+
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header">
+    <h1>Nombre y mensaje</h1>
+    </div>
+    <script>
       function validar()
         {
           var valor = document.getElementById("caja").value //Encuentra el 'value' de 'caja'
@@ -26,13 +34,6 @@
             }
         }
     </script>
-</head>
-
-<body>
-<div data-role="page" id="Principal" data-theme="a">
- <div data-role="header">
-    <h1>Nombre y mensaje</h1>
-    </div>
     <label form="name">Nombre</label>
     <input type="text" name="name" id="caja">
      <button type"button" onClick="validar()"> Enviar </button>
